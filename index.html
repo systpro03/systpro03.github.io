@@ -34,16 +34,18 @@
             <h1>Louei Genita</h1>
             <h3>And I'm a <span class="multiple-text"></span></h3>
             <p>Programming is not just a skill; it's a journey of continuous learning, where each line of code is a step forward into the boundless realm of possibilities.</p>
-            <div class="social-media">
+            <div class="social-media"> 
                 <a href="#"><i class='bx bxl-facebook'></i></a>
                 <a href="#"><i class='bx bxl-tiktok'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="http://github.com/systpro04"><i class='bx bxl-github'></i></a>
                 <a href="#"><i class='bx bxl-youtube'></i></a>
             </div>
             <a class="btn" href="#pdf">Download CV</a>
         </div>
         <div class="home-img">
-            <img src="images/home1.png" alt="Home">
+            <!-- <img src="images/home1.png" alt="Home"> -->
+            <img src="images/emojie.png" alt="Home">
+
         </div>
     </section>
 <!-- End Home Page -->
@@ -51,12 +53,14 @@
 <!-- About Page -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="images/home1.png" alt="About">
+            <!-- <img src="images/home1.png" alt="About"> -->
+            <img src="images/emojie.png" alt="About">
         </div>
-
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae laudantium similique mollitia rem ducimus dicta adipisci magni, dolor temporibus facere voluptas qui non fugiat voluptates repellat. Illum fugit sapiente pariatur?</p>
+            <p>Hi there, I'm Louei Genita, a recent information technology bachelor's degree graduate. 
+                I have a strong foundation in IT thanks to my scholastic path. I enjoy lending my knowledge and experience to creative initiatives, from creating websites to keeping up with the most recent developments in the field.
+                 Together, let's investigate the fascinating opportunities found in the field of information technology!</p>
             <!-- <a href="#" class="btn">Read More</a> -->
         </div>
     </section>
@@ -156,7 +160,7 @@
             </div>
         
             <div class="project-box">
-                <img src="images/Not_Available.png" alt="project">
+                <img src="images/itsystem.png" alt="project">
                 <div class="project-layer">
                     <h2>Codeigniter Project</h2>
                     <p>"Build powerful and scalable web applications using the CodeIgniter framework for seamless performance."</p>
@@ -181,17 +185,19 @@
         <div class="hobbies-box">
             <i class='bx bx-joystick'></i>
             <h3>Mobile Games</h3>
-            <p>Create immersive and dynamic web experiences that captivate users and elevate online presence.</p>
+            <p>Clash of Clans, Mobile Legends</p>
         </div>
+
         <div class="hobbies-box">
             <i class='bx bxl-django'></i>
             <h3>Djing</h3>
-            <p>Unleash your creativity with visually stunning graphic designs that leave a lasting impression.</p>
+            <p>Playing Music, Scratching</p>
         </div>
+        
         <div class="hobbies-box">
-            <i class='bx bx-movie-play' ></i>
+            <i class='bx bx-movie-play'></i>
             <h3>Watching Movies</h3>
-            <p>Drive success and engagement through strategic digital marketing solutions tailored to your goals.</p>
+            <p>Korean, Action, Comedy Movies</p>
         </div>
     </div>
 </section>
@@ -201,18 +207,20 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form id="myForm" method="post">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="text" placeholder="Email Address">
+                <input type="text" name="name" id="name" placeholder="Full Name" required>
+                <input type="text" name="address" placeholder="Address" required>
+
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Contact No">
-                <input type="text" placeholder="Email Subject" >
+                <input type="email" name="email" id="email" placeholder="Email" required>
+
+                <input type="text" name="subject" placeholder="Subject" required>
             </div>
-            <textarea name="" id="" cols="15" rows="5" placeholder="Your Message"></textarea>
-            <input type="submit" name="" id="" value="Send Message" class="btn">
-        </form>
+            <textarea name="message" name="message" cols="15" rows="5" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>        
     </section>
 <!-- End Contact Page -->
 
@@ -230,7 +238,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/script.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
